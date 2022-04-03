@@ -91,7 +91,7 @@
     },
     "vmName": {
       "type": "string",
-      "defaultValue": "simple-vm",
+      "defaultValue": "simple-new-vm",
       "metadata": {
         "description": "Name of the virtual machine."
       }
@@ -99,13 +99,13 @@
   },
   "variables": {
     "storageAccountName": "[concat('bootdiags', uniquestring(resourceGroup().id))]",
-    "nicName": "myVMNic",
+    "nicName": "myVMNic1",
     "addressPrefix": "10.0.0.0/16",
-    "subnetName": "Subnet",
+    "subnetName": "Subnet1",
     "subnetPrefix": "10.0.0.0/24",
-    "virtualNetworkName": "MyVNET",
+    "virtualNetworkName": "MyVNET1",
     "subnetRef": "[resourceId('Microsoft.Network/virtualNetworks/subnets', variables('virtualNetworkName'), variables('subnetName'))]",
-    "networkSecurityGroupName": "default-NSG"
+    "networkSecurityGroupName": "default-NSG1"
   },
   "resources": [
     {
